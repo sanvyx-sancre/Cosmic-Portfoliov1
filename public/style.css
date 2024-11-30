@@ -1,0 +1,176 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: radial-gradient(circle, #00141a, #000);
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Main Content */
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+#description {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.social-btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #0055ff;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    border: 2px solid #0055ff;
+}
+
+.social-btn:hover {
+    background-color: #00ffdd;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 221, 0.6);
+}
+
+.youtube { background-color: #ff658b; }
+.github { background-color: #2b1019; }
+.x { background-color: #dc00f0; }
+
+/* Project Buttons */
+.project-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #0055ff;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #00ffdd;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 221, 0.6);
+}
+
+/* Sections */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill {
+    background: #0055ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #00ffdd;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Finished Project - White Space */
+.white-space-project {
+    background: linear-gradient(145deg, #f1f1f1, #cccccc);
+    color: #333;
+}
+
+.white-space-project h3 {
+    color: #333;
+}
+
+/* In-progress Project - Infinite Dungeon */
+.infinite-dungeon-project {
+    background: linear-gradient(145deg, #003366, #0055ff);
+    color: #fff;
+}
